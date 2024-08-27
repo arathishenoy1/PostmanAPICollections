@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "3fcd1de9-1896-4656-aae4-409bb77ac026",
+		"name": "Sample collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37055700"
+	},
+	"item": [
+		{
+			"name": "CreateAPI",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Arathi\",\r\n    \"compName\": \"google\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/post",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

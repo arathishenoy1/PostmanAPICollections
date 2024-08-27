@@ -1,0 +1,27 @@
+{
+	"info": {
+		"_postman_id": "3fcd1de9-1896-4656-aae4-409bb77ac026",
+		"name": "Sample collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37055700"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/get",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"get"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
